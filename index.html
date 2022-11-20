@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+		// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.031 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+    </script>
+  </head>
+  <body>
+	  
+	  <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+
+    <nav>
+      <ul>
+        <li><a id="onpage" href="index.html">Resume</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="music.html">Music I Like</a></li>
+      </ul>
+    </nav>
+    <div id="content">
+      <section>
+        <h1>Krystian Szczech</h1>
+        <h3>Email: kszczech@hawk.iit.edu</h3>
+        <h2>Education</h2>
+        <p>Illinois Math and Science Academy graduate, 2021</p>
+        <p>Currently majoring in Applied Cybersecurity and Information Technology at the Illinois Institute of Technology, expected to graduate in 2025</p>
+      </section>
+      <section>
+        <h2>Work Experience</h2>
+        <div class="table">
+          <div class="no-top-border">
+            <div><strong>Dates</strong></div>
+            <div><strong>Description</strong></div>
+          </div>
+          <div class="no-top-border">
+            <div><h3>Sep 2020 - Present</h3></div>
+            <div>
+              <h3>Tech Aide</h3>
+              <p>Part-time between semesters</p>
+              <p>Avg. 25+ Hrs/Week</p>
+              <p>Total Hours: 450+</p>
+              <p><em>Worked at a local elementary school&apos;s technology department. Hired after volunteering at school. Performed device maintenance and repairs on hundreds of devices, including various models of Chromebooks, MacBooks, and iPads. Set up multiple servers, including a camera server, a web server, and an asset management server. Implemented a system for tracking assets as well as maintenance performed on said assets. Created a website involving custom graphics, JavaScript, and CSS styling to replace a physical system as requested by a teacher. Assisted in installing an antenna, a UPS, and other equipment. Performed video recording, live streaming, and editing for events. Directed groups of volunteers.</em></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Volunteer Work</h2>
+        <div class="table">
+          <div>
+            <div><strong>Dates</strong></div>
+            <div><strong>Description</strong></div>
+          </div>
+          <div>
+            <div><h3>Jun 2019 - Aug 2020</h3></div>
+            <div>
+              <h3>Technology Department Volunteer</h3>
+              <p>Avg. 20 Hrs/Week</p>
+              <p>Total Hours: 152</p>
+              <p><em>Helped a local elementary school&apos;s technology department over the summer with maintenance involving device cleaning, relabeling, imaging, and configuring. Replaced MacBook hard drives. Assisted in installing a security camera. Led a small group of other volunteers.</em></p>
+              <p><em>Was hired for part-time position around September 10, 2020.</em></p>
+            </div>
+          </div>
+          <div class="top-border">
+            <div><h3>Aug 2019 - Jun 2021</h3></div>
+            <div>
+              <h3>Student Computing Support</h3>
+              <p>Leadership Positions: Jr. Manager, Sr. Manager</p>
+              <p>2 Hrs/Week</p>
+              <p>Total Hours: 50 (as of 2020-08-02)</p>
+              <p><em>Assisted students on high school campus with computer issues, including setting up all relevant software and settings during move-in. Continued to troubleshoot and support computer issues throughout the school year. Created a Bash script for setting up Wi-Fi on Linux devices. Involved in selecting new team members.</em></p>
+              <p><em>Was selected as Jr. Manager after semester 1 of grade 11, and later as Sr. Manager beginning grade 12.</em></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>Languages Used:
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>HTML</li>
+              <li>JavaScript</li>
+              <li>CSS</li>
+              <li>C#</li>
+              <li>C</li>
+              <li>Lua</li>
+              <li>PHP</li>
+              <li>Bash</li>
+              <li>MySQL</li>
+            </ul>
+          </li>
+          <li>Server Hosting</li>
+          <li>Basic Git Knowledge</li>
+          <li>Device Repair</li>
+          <li>Chromebooks</li>
+          <li>Photography + Video Recording</li>
+          <li>Photo + Video Editing</li>
+          <li>Live Event Streaming</li>
+          <li>CAD</li>
+          <li>Networking</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
