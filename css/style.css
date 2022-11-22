@@ -27,6 +27,10 @@ div.table div div:first-child {
   border-right: 0.25rem solid #07C;
 }
 
+img {
+  margin:25px;
+}
+
 #content {
   margin:auto;
   margin-top: 0.75rem;
@@ -37,18 +41,7 @@ div.table div div:first-child {
   background-color: #CEF
 }
 
-img {
-	margin:25px;
-	width:400px;
-}
 
-img.left {
-	float: left;
-}
-
-img.right {
-	float:right;
-}
 
 img#album, audio {
 	width:100%;
@@ -57,7 +50,6 @@ img#album, audio {
 }
 div#player {
   text-align:center;
-  width:20%;
   float:right;
 }
 nav {
@@ -95,4 +87,34 @@ nav a#onpage {
 
 h1, h2, h3 {
   font-family: "Roboto";
+}
+
+@media screen and (max-width:1000px){
+  p, li:not(nav ul li){font-size:2.5rem;}
+  img{width:95%;}
+  h1{font-size:3.5rem;}
+  h2{font-size:3rem;}
+  h3{font-size:2.75rem;}
+  h6{font-size:1.2rem;}
+  #content{width:87%}
+  nav ul li {width:100%; height:5em;border-bottom:0.25rem solid #05a;}
+  nav ul li a {font-size:2.3rem;}
+  div#player{width:100%;}
+}
+
+@media screen and (min-width:1000px){
+  img {
+    width:400px;
+  }
+  #content{
+    width:75%;
+  }
+  div#player{width:20%;}
+  img.left {
+    float: left;
+  }
+
+  img.right {
+    float:right;
+  }
 }

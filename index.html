@@ -6,41 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-		// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: -25.344, lng: 131.031 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
-
-window.initMap = initMap;
-    </script>
   </head>
   <body>
-	  
-	  <div id="map"></div>
-
-    <!-- 
-     The `defer` attribute causes the callback to execute after the full HTML
-     document has been parsed. For non-blocking uses, avoiding race conditions,
-     and consistent behavior across browsers, consider loading using Promises
-     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-    -->
-    <script
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
-    ></script>
-
     <nav>
       <ul>
         <li><a id="onpage" href="index.html">Resume</a></li>
@@ -60,8 +27,8 @@ window.initMap = initMap;
         <h2>Work Experience</h2>
         <div class="table">
           <div class="no-top-border">
-            <div><strong>Dates</strong></div>
-            <div><strong>Description</strong></div>
+            <div><p><strong>Dates</strong></p></div>
+            <div><p><strong>Description</strong></p></div>
           </div>
           <div class="no-top-border">
             <div><h3>Sep 2020 - Present</h3></div>
@@ -79,8 +46,8 @@ window.initMap = initMap;
         <h2>Volunteer Work</h2>
         <div class="table">
           <div>
-            <div><strong>Dates</strong></div>
-            <div><strong>Description</strong></div>
+            <div><p><strong>Dates</strong></p></div>
+            <div><p><strong>Description</strong></p></div>
           </div>
           <div>
             <div><h3>Jun 2019 - Aug 2020</h3></div>
@@ -107,32 +74,32 @@ window.initMap = initMap;
       </section>
       <section>
         <h2>Skills</h2>
-        <ul>
-          <li>Languages Used:
-            <ul>
-              <li>Python</li>
-              <li>Java</li>
-              <li>HTML</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-              <li>C#</li>
-              <li>C</li>
-              <li>Lua</li>
-              <li>PHP</li>
-              <li>Bash</li>
-              <li>MySQL</li>
-            </ul>
-          </li>
-          <li>Server Hosting</li>
-          <li>Basic Git Knowledge</li>
-          <li>Device Repair</li>
-          <li>Chromebooks</li>
-          <li>Photography + Video Recording</li>
-          <li>Photo + Video Editing</li>
-          <li>Live Event Streaming</li>
-          <li>CAD</li>
-          <li>Networking</li>
-        </ul>
+		<ul>
+		  <li>Languages Used:
+			<ul>
+			  <li>Python</li>
+			  <li>Java</li>
+			  <li>HTML</li>
+			  <li>JavaScript</li>
+			  <li>CSS</li>
+			  <li>C#</li>
+			  <li>C</li>
+			  <li>Lua</li>
+			  <li>PHP</li>
+			  <li>Bash</li>
+			  <li>MySQL</li>
+			</ul>
+		  </li>
+		  <li>Server Hosting</li>
+		  <li>Basic Git Knowledge</li>
+		  <li>Device Repair</li>
+		  <li>Chromebooks</li>
+		  <li>Photography + Video Recording</li>
+		  <li>Photo + Video Editing</li>
+		  <li>Live Event Streaming</li>
+		  <li>CAD</li>
+		  <li>Networking</li>
+		</ul>
       </section>
     </div>
   </body>
