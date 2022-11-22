@@ -27,6 +27,11 @@ div.table div div:first-child {
   border-right: 0.25rem solid #07C;
 }
 
+div#map{
+	width:100%;
+	height:35rem;
+}
+
 img {
   margin:25px;
 }
@@ -40,8 +45,6 @@ img {
   width:75%;
   background-color: #CEF
 }
-
-
 
 img#album, audio {
 	width:100%;
